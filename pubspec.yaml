@@ -1,0 +1,33 @@
+name: masir_ghabuli
+description: Get Better - برنامه‌ریز و بازی‌وارساز آمادگی آزمون نمونه دولتی (آفلاین)
+publish_to: 'none'
+version: 1.2.0+3
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.1.2
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  shared_preferences: ^2.2.3
+  flutter_local_notifications: ^17.2.2
+  timezone: ^0.9.4
+  flutter_timezone: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  sqflite_common_ffi: ^2.3.3
+
+flutter:
+  uses-material-design: true
+  # فونت وزیرمتن (Regular و Bold): فایل‌ها هنوز در assets/fonts نیستند (محیط ساخت اینترنت نداشت).
+  # `bash tool/get_font.sh` فایل‌ها را دریافت، اعتبارسنجی و بلوک fonts را همین‌جا ثبت می‌کند.
+  # تا آن زمان برنامه با فونت سیستم کار می‌کند (تم از قبل روی خانوادهٔ Vazirmatn تنظیم است).
+  # ثبت بلوک fonts بدون وجود فایل‌ها باعث خطای build می‌شود، پس دستی اضافه‌اش نکن.
